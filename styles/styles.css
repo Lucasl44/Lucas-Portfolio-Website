@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+}
+body {
+  background-image: linear-gradient(260deg, #ffe5b4 0%, #00008b 100%);
+}
+#image1 {
+  max-width: 30vw;
+}
+/* Skills section flex box boxes */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  align-items: flex-end;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  flex-wrap: wrap;
+}
+.box {
+  background-color: orange;
+  text-align: center;
+  padding: 10px;
+  border-radius: 25px;
+  min-width: 40%;
+  border: 2px solid black;
+  min-height: 100px;
+  margin-bottom: 50px;
+}
+/* contacts and important links */
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: ivory;
+  transition: all 0.2s ease-in-out;
+}
+.fa:hover {
+  opacity: 0.6;
+  transform: scale(1.5);
+}
+.fa-twitter{
+    background-color: lightblue;
+}
+.fa-instagram{
+    background-color: purple;
+}
+.fa-linkedin{
+    background-color: darkblue;
+}
+.fa-github{
+    background-color: black;
+}
+/* A bit of fun section */
+.center {
+  text-align: center;
+}
