@@ -36,6 +36,62 @@ body {
   min-height: 100px;
   margin-bottom: 50px;
 }
+.whitetext {
+  color: white;
+}
+.whitetext:hover {
+  opacity: 0;
+}
+/* Transitions and animations for flex boxes */
+.box1 {
+  background-color: yellow;
+  transition: border-radius 2s, background-color 2s, transform 2s;
+}
+.box1:hover {
+  border-radius: 25%;
+  background-color: red;
+  transform: scale(1.2);
+}
+.box2 {
+  background-color: purple;
+  transition: transform 3s;
+}
+.box2:hover {
+  transform: rotate(360deg) scale(0);
+}
+.box3 {
+  background-color: black;
+}
+.box3:hover {
+  animation-name: box3;
+  animation-duration: 4s;
+}
+@keyframes box3 {
+  0% {
+    background-color: red;
+    box-shadow: 3px 3px black;
+  }
+  20% {
+    background-color: orange;
+    box-shadow: 6px 6px gray;
+  }
+  40% {
+    background-color: yellow;
+    box-shadow: 12px 12px lightgray;
+  }
+  60% {
+    background-color: green;
+    box-shadow: 12px 12px whitesmoke;
+  }
+  80% {
+    background-color: blue;
+    box-shadow: 6px 6px #ffffee;
+  }
+  100% {
+    background-color: purple;
+    box-shadow: 3px 3px white;
+  }
+}
 /* contacts and important links */
 .fa {
   padding: 20px;
@@ -47,19 +103,19 @@ body {
 }
 .fa:hover {
   opacity: 0.6;
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
-.fa-twitter{
-    background-color: lightblue;
+.fa-twitter {
+  background-color: lightblue;
 }
-.fa-instagram{
-    background-color: purple;
+.fa-instagram {
+  background-color: purple;
 }
-.fa-linkedin{
-    background-color: darkblue;
+.fa-linkedin {
+  background-color: darkblue;
 }
-.fa-github{
-    background-color: black;
+.fa-github {
+  background-color: black;
 }
 /* A bit of fun section */
 .center {
