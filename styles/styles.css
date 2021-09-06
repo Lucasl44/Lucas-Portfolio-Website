@@ -121,3 +121,8 @@ body {
 .center {
   text-align: center;
 }
+.colorBox {
+  border: 2px solid black;
+  background-color: white;
+  text-align: center;
+}
